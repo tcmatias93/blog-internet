@@ -7,7 +7,6 @@ export default function Blog({ params }: { params: { slug: string } }) {
     <div className="flex min-h-screen flex-col items-center justify-between p-24">Blog de {blog?.author}
       <p>{blog?.date}</p>
       <p>{blog?.description}</p>
-
     </div>
   )
 }
