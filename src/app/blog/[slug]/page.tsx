@@ -1,8 +1,10 @@
-import { blogs } from "@/lib/data"
+import { getBlog } from "@/components/ListBlog"
 
-export default function Blog({ params }: { params: { slug: string } }) {
+export default async function Blog({ params }: { params: { slug: string } }) {
 
-  const blog = blogs.find((blog) => blog.title == params.slug)
+  const { blogs } = await getBlog()
+  const blog = blogs.find((blog) => blog.title == decodeURIComponent(params.slug))
+
   return (
     <div className="flex min-h-screen flex-col items-center justify-between p-24">Blog de {blog?.author}
       <p>{blog?.date}</p>

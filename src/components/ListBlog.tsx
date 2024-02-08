@@ -3,7 +3,7 @@ import { Key, ReactElement, JSXElementConstructor, ReactNode, ReactPortal, Promi
 
 
 
-async function getBlog() {
+export async function getBlog() {
   try {
     const res = await fetch('http://localhost:3000/api/blog', { cache: 'no-store' })
 
