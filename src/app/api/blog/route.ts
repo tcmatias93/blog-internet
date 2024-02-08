@@ -2,8 +2,10 @@ import Blog from "@/models/model";
 import ConnectMongo from "@/utils/mongoose";
 import { NextResponse, NextRequest } from "next/server";
 
-export function GET() {
-  return NextResponse.json({ message: "Obteniendo blog" });
+export async function GET() {
+  await ConnectMongo();
+  const blogs = await Blog.find();
+  return NextResponse.json({ blogs });
 }
 
 export async function POST(req: NextRequest) {
