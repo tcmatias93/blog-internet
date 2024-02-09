@@ -1,36 +1,15 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Inicializacion de proyecto
 
-## Getting Started
+- Para poder hacer andar el proyecto se necesita clonar el repositorio, luego abrir una terminal y ejecutar los comando npm install o npm i.
 
-First, run the development server:
+- Luego se ejecuta npm run dev y se habre el proyecto en el puerto local correspondiente que la terminal mencione.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Utilidades
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Para hacer el proyecto utilice Postmant para comprobar que funcionen los llamados de las API
+- Como base de datos use MongoDB (Se que es mala practica pero la variable de entorno de la base esta en el codigo asi se las compartia y el proyecto anda sin problemas y no falta ese dato)
+- Utilice Next.js
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Aclaraciones
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+-El buscador no funciona

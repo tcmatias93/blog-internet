@@ -10,7 +10,7 @@ export default async function Blog({ params }: { params: { slug: string } }) {
 
   return (
     <div className="flex flex-col items-center justify-between p-10">
-      <h1 className="text-3xl font-bold italic font-medium">{blog?.title}</h1>
+      <h1 className="text-3xl italic font-medium">{blog?.title}</h1>
       <div className="p-6 w-full">
         <p className="pb-3">Autor: {blog?.author}</p>
         <p className="">Fecha de publicación: {formattedDate}</p>
