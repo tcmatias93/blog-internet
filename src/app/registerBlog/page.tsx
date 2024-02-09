@@ -11,7 +11,7 @@ export default function RegisterBlog() {
 
   const router = useRouter()
 
-  async function handleSubmit(e) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
 
     if (!title || !author || !description) {
